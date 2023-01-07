@@ -1,0 +1,146 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-image: url("../img/main-background.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.main .bg-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(68, 68, 68, 0.8);
+  z-index: -5;
+}
+.main .wrapper {
+  position: relative;
+  width: 500px;
+  background-color: #fff;
+  min-height: 400px;
+  z-index: 5;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px rgb(21, 62, 184);
+          box-shadow: 0 0 10px rgb(21, 62, 184);
+}
+.main .wrapper .progress-btn {
+  position: absolute;
+  border: none;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.main .wrapper .progress-btn:hover {
+  background-color: #aaa;
+}
+.main .wrapper .progress-btn::after {
+  content: "Wyświetl wszystkie próby szukanego tekstu";
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  left: 80px;
+  bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  font-size: 15px;
+  opacity: 0;
+}
+.main .wrapper .progress-btn:hover::after {
+  opacity: 1;
+}
+.main .wrapper .top {
+  height: 150px;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 60px 10px 60px 10px;
+  border-radius: 8px;
+}
+.main .wrapper .bottom {
+  padding: 40px;
+}
+.main .wrapper .bottom .input-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.main .wrapper .bottom .input-box label {
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  color: rgb(221, 145, 4);
+  font-size: 20px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  pointer-events: none;
+}
+.main .wrapper .bottom .input-box input {
+  outline: none;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid rgb(221, 145, 4);
+  z-index: 0;
+  padding: 10px;
+  font-size: 20px;
+}
+.main .wrapper .bottom .input-box input:focus + label, .main .wrapper .bottom .input-box input:valid + label {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+.main .wrapper .bottom .input-box .error {
+  color: red;
+  margin-top: 5px;
+  font-size: 20px;
+  visibility: hidden;
+}
+.main .wrapper .bottom .button-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main .wrapper .bottom .button-box .submit-btn {
+  background-color: rgb(221, 145, 4);
+  border: none;
+  width: 50%;
+  font-size: 25px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+.main .wrapper .bottom .button-box .submit-btn:hover {
+  background-color: rgb(162, 109, 8);
+  color: #fff;
+}/*# sourceMappingURL=index.css.map */
