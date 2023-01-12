@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,30 +10,40 @@
     <script src="index.js" defer></script>
     <script src="https://kit.fontawesome.com/047849f5b0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <section class="main">
         <div class="bg-shadow"></div>
+        <div class="progress-box">
+            <ul class="chance-list">
+                <!-- <li class="chance-list-item">Tekst1</li>
+                <li class="chance-list-item">Tekst2</li>
+                <li class="chance-list-item">Tekst3</li> -->
+            </ul>
+        </div>
         <div class="wrapper">
             <button class="progress-btn"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
             <div class="top">
-                <h1>Jakiś tekst</h1>
+                <h1>Algorytm genetyczny</h1>
             </div>
             <div class="bottom">
                 <div class="input-box">
-                    <input type="text" id="text" required>
+                    <input type="text" id="word-text" required>
                     <label>Szukany tekst</label>
                     <p class="error error-text">error</p>
                 </div>
                 <div class="input-box">
-                    <input type="text" id="text" required>
+                    <input type="number" id="chance-number" required>
                     <label>Ilość prób</label>
                     <p class="error error-chances">error</p>
                 </div>
                 <div class="button-box">
                     <button class="submit-btn">Zacznij</button>
+                    <p class="submit-text">Tekst</p>
                 </div>
             </div>
         </div>
     </section>
 </body>
+
 </html>

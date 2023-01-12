@@ -30,6 +30,39 @@
   background-color: rgba(68, 68, 68, 0.8);
   z-index: -5;
 }
+.main .progress-box {
+  position: absolute;
+  min-width: 200px;
+  height: 300px;
+  overflow-y: auto;
+  left: 50%;
+  top: 200px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #fff;
+  color: rgb(221, 145, 4);
+  padding: 20px 0;
+  border-radius: 8px;
+  z-index: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.5s;
+  transition: opacity 0.3s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.3s;
+  transition: transform 0.5s, opacity 0.3s, -webkit-transform 0.5s;
+}
+.main .progress-box .chance-list {
+  list-style-type: none;
+  text-align: center;
+}
+.main .progress-box .chance-list-item {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+.main .progress-box-active {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  opacity: 1;
+}
 .main .wrapper {
   position: relative;
   width: 500px;
@@ -63,6 +96,7 @@
   height: 50px;
   left: 80px;
   bottom: 20px;
+  border-radius: 8px;
   background-color: #fff;
   padding: 20px;
   font-size: 15px;
@@ -114,7 +148,7 @@
           transform: translateY(-30px);
 }
 .main .wrapper .bottom .input-box .error {
-  color: red;
+  color: rgb(255, 0, 0);
   margin-top: 5px;
   font-size: 20px;
   visibility: hidden;
@@ -124,9 +158,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .main .wrapper .bottom .button-box .submit-btn {
   background-color: rgb(221, 145, 4);
@@ -143,4 +181,9 @@
 .main .wrapper .bottom .button-box .submit-btn:hover {
   background-color: rgb(162, 109, 8);
   color: #fff;
+}
+.main .wrapper .bottom .button-box .submit-text {
+  color: rgb(255, 0, 0);
+  font-size: 25px;
+  visibility: hidden;
 }/*# sourceMappingURL=index.css.map */
